@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <style>
+        .back{
+        background: url("https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/bg.png") fixed no-repeat center top;
+      	-webkit-background-size: cover;
+      	-moz-background-size: cover;
+      	-o-background-size: cover;
+      	background-size: cover;
+       }
+    .img_width{
+        width: 100%;  
+    }
+        .fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.main1{
+    padding-top: 20px;
+}
+.heading1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 250px;
+}
+.heading2{
+    padding-left: 600px;
+    font-weight: 600;
+    color: white; 
+}
+
+.main2{
+    display: inline-block;
+	float: left;   	
+    text-align: left;
+    max-width: 432px;
+    padding-top: 100px;
+    padding-left:300px ;
+}
+
+.mainhead{
+      font-size:40px;
+    	font-family: 'open sans', sans-serif;
+    	font-weight: bold;
+    	color: #ffffff;
+        line-height: 100%;
+        padding-top: 30px;
+    }
+
+    .subhead{
+      color:#faebd7;
+    	font-size:18px;
+    	font-family: 'open sans', sans-serif;
+    	padding-bottom: 10px;
+      line-height: 30px;
+    }
+    .d-icons1{
+        text-align: left;
+        padding-top: 20px;
+        gap: 30px;
+    }
+
+    .download-btn {
+        background: rgba(246,129,33,0.0);
+    	border: 3px solid #fff;
+    	border-radius: 3px;
+    	font-family: 'open sans', sans-serif;
+    	font-weight: bold;
+    	font-size: 18px;
+    	color: #fff;
+        text-decoration:none;
+        position: relative;
+        display: inline-block;
+        padding: 12px  50px;
+    }
+    .download-btn:hover {background: rgba(255,255,255,1.0);
+    	border: 3px solid #fff;
+    	border-radius: 3px;
+    	font-family: 'open sans', sans-serif;
+    	font-weight: bold;
+    	font-size: 18px;
+    	color: #ff8833;
+    }
+    .mobiles{position: relative;
+    	display: inline-block;
+    	margin-top: 110px;
+        margin-right: 7px;
+    }
+    .phone{
+        width: 100%;
+        height: 392px;
+        vertical-align: bottom;
+    }
+    .main-head{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        background: #fcf7e7;
+        background-size: cover;
+        font-family: 'open sans', sans-serif;
+    }
+    .main3{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .img1{
+        padding-top: 30px;
+    }
+
+    .cal-head{
+        color:#000000;
+    	font-size:22px;
+    	font-family: 'open sans', sans-serif;
+    }
+    .cal-sub{
+        color:#696969;
+    	font-size:13px;
+    	font-family: 'open sans', sans-serif;
+    	max-width: 225px;
+        position: relative;
+        top: -10px;
+        line-height: 21px;
+    }
+   .main4{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background: #fff;
+   }
+   .main4-1{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .h1{
+       color:#333333;
+	   font-family: 'open sans', sans-serif;
+       font-size:28px;
+       font-weight: 700;
+       line-height: 100%;
+     padding-top: 10px;
+    }
+    .h2{
+        color:#808080;
+	    font-size:20px;
+	    font-family: 'open sans', sans-serif;
+    }
+    .h3{
+        color: rgb(169, 169, 169);
+	    font-size:16px;
+	    font-family: 'open sans', sans-serif;
+        line-height: 200%;
+    }
+    .main5{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background: #f0f1f5;
+   }
+
+   .main6{
+    background: #fcf7e7;
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+   }
+
+   .head6-1{
+      color: #696969;
+      font-size: 20px;
+      font-family: 'open sans', sans-serif;
+      text-align: center;
+      font-weight: bold;
+   }
+   .head6-2{
+        color:#a9a9a9;
+        font-size: 16px;
+        padding: 15px 0;
+        font-family: 'open sans', sans-serif;
+        text-align: center;
+   }
+   .imgs4{
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      justify-content: center;
+      padding-top: 25px;
+    }
+    .main7{
+        background: #f68121;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .head7-1{
+        color:#ffffff;
+        text-align: center;
+        font-size:20px;
+        font-family: 'open sans', sans-serif;
+        padding-top: 25px;
+    }
+    .head7-2{
+        text-align: center;
+        font-size:24px;
+        line-height: 150%;
+        font-style: italic;
+        color:#ffffff;
+        font-family: 'open sans', sans-serif;
+        text-align: center;
+        width: 64%;
+        margin-left: 18%;
+        padding-top: 30px;
+    }
+    .head7-3{
+        text-align: center;
+        font-size:24px;
+        line-height: 150%;
+        font-style: italic;
+        color:#ffffff;
+        font-family: 'open sans', sans-serif;
+        text-align: center;
+        width: 64%;
+        margin-left: 18%;
+        padding-bottom: 20px;
+    }
+    .rate{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+    .side-head{
+    text-align: center;
+    color:#eee;
+    font-size:14px;
+    font-family: 'open sans', sans-serif;
+    position: relative;
+    top: -5px;
+   }
+   .head8{
+        color:#ffffff;
+        text-align: center;
+        font-size:26px;
+        font-family: 'open sans', sans-serif;
+        padding-top: 15px;
+    }
+    .head8-1{
+        font-size: 16px;
+        line-height: 150%;
+        color:#ffffff;
+        font-family: 'open sans', sans-serif;
+        text-align: center;
+    }
+    .btn1{
+      text-align: center; 
+    }
+    .download-btn1 {
+        background: rgba(246,129,33,0.0);
+    	border: 3px solid #fff;
+    	border-radius: 3px;
+    	font-family: 'open sans', sans-serif;
+    	font-weight: bold;
+    	font-size: 18px;
+    	color: #fff;
+        text-decoration:none;
+        position: relative;
+        display: inline-block;
+        padding: 12px  50px;
+    }
+    .download-btn1:hover {background: rgba(255,255,255,1.0);
+    	border: 3px solid #fff;
+    	border-radius: 3px;
+    	font-family: 'open sans', sans-serif;
+    	font-weight: bold;
+    	font-size: 18px;
+    	color: #ff8833;
+    }
+    .d-icons{
+        text-align: center;
+        padding-top: 20px;
+        gap: 30px;
+    }
+    .log_st{padding-top: 15px;
+	    padding-bottom: 30px;
+	    padding-left: 30px;
+
+    }
+    .log_st:hover{
+      opacity: 0.5;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        gap: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+<div class="back">
+        <img class="img_width" src="" alt="">
+
+    <div class="main1">
+        <div class="heading1">
+            <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/logo.png" alt="">
+            <div class="heading2">stay connected</div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+
+        </div>
+    </div>
+
+<div class="main2">
+    <div class="mainhead">APP LANDING PAGE</div>
+    <pre class="subhead">More than 10 unique HTML templates in one
+bundle isn't that awesome with a lot of features 
+and great design brought to you by PixFort.</pre>
+<div class="btn">
+<div class="download-btn">DOWNLOAD</div>
+</div>
+<div class="d-icons1">
+    <a href="#"><span><img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/apple.png" class="log_st slow_fade" alt=""></span></a>
+    <a href="#"><span><img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/android.png" class="log_st slow_fade" alt=""></span></a>
+    <a href="#"><span><img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/windows.png" class="log_st slow_fade" alt=""></span></a>
+</div>
+</div>
+ <div class="mobiles">
+    <img class="phone" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/phones.png" alt="">
+ </div>
+
+
+<div class="main-head">
+<div class="main3">
+    <div class="img1">
+        <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/1.png" alt="">
+    </div>
+    <div class="calc">
+        <p class="cal-head">Calculator</p>
+        <p class="cal-sub">The edges may be directed or For example if the vertice people party.</p>
+    </div>
+</div>
+
+<div class="main3">
+    <div class="img1">
+        <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/2.png" alt="">
+    </div>
+    <div class="calc">
+        <p class="cal-head">Calculator</p>
+        <p class="cal-sub">The edges may be directed or For example if the vertice people party.</p>
+    </div>
+</div>
+
+<div class="main3">
+    <div class="img1">
+        <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/3.png" alt="">
+    </div>
+    <div class="calc">
+        <p class="cal-head">Calculator</p>
+        <p class="cal-sub">The edges may be directed or For example if the vertice people party.</p>
+    </div>
+</div>
+</div>
+
+<div class="main-head">
+    <div class="main3">
+        <div class="img1">
+            <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/4.png" alt="">
+        </div>
+        <div class="calc">
+            <p class="cal-head">Calculator</p>
+            <p class="cal-sub">The edges may be directed or For example if the vertice people party.</p>
+        </div>
+    </div>
+    
+    <div class="main3">
+        <div class="img1">
+            <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/5.png" alt="">
+        </div>
+        <div class="calc">
+            <p class="cal-head">Calculator</p>
+            <p class="cal-sub">The edges may be directed or For example if the vertice people party.</p>
+        </div>
+    </div>
+    
+    <div class="main3">
+        <div class="img1">
+            <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/6.png" alt="">
+        </div>
+        <div class="calc">
+            <p class="cal-head">Calculator</p>
+            <p class="cal-sub">The edges may be directed or For example if the vertice people party.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="main4">
+        <div class="sideimg">
+            <img class="side-img" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/hero_1.png" alt="">
+        </div>
+
+        <div class="headings">
+            <p class="h1">The most amazing thing is here</p>
+            <p class="h2">Our service is totaly thin and light.</p>
+            <pre class="h3">Lorem ipsum dolor sit amet consectetur adipiscing elit
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua Ut enim ad minim veniam quis nostrud.</pre>
+            <pre class="h3">Lorem ipsum dolor sit amet consectetur adipiscing elit
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua Ut enim ad minim veniam quis nostrud.</pre>
+    <div class="main4-1">
+    <div class="img1">
+        <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/overview_design_notification_icon.png" alt="">
+    </div>
+    <div class="calc">
+        <p class="cal-head">Great Apps For You</p>
+        <p class="cal-sub">Consectetur adipiscing elit sed do eiusmod tempor magna aliqua Ut enim ad minim veniam nostrud.</p>
+    </div>
+    </div>
+        </div>
+    </div>
+
+    <div class="main5">
+        <div class="headings">
+            <p class="h1">The most amazing thing is here</p>
+            <p class="h2">Our service is totaly thin and light.</p>
+            <pre class="h3">Lorem ipsum dolor sit amet consectetur adipiscing elit
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua Ut enim ad minim veniam quis nostrud.</pre>
+            <pre class="h3">Lorem ipsum dolor sit amet consectetur adipiscing elit
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua Ut enim ad minim veniam quis nostrud.</pre>
+    <div class="main4-1">
+    <div class="img1">
+        <img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/overview_design_notification_icon.png" alt="">
+    </div>
+    <div class="calc">
+        <p class="cal-head">Great Apps For You</p>
+        <p class="cal-sub">Consectetur adipiscing elit sed do eiusmod tempor magna aliqua Ut enim ad minim veniam nostrud.</p>
+    </div>
+    </div>
+        </div>
+
+        <div class="sideimg">
+            <img class="side-img" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/hero_1.png" alt="">
+        </div>
+    </div>
+
+    <div class="main6">
+        <div class="headings-6">
+          <div class="head6-1">Companies We Work With</div>
+          <div class="head6-2">great words from great people</div>
+        </div>
+      <div class="imgs4">  
+        <img class="i1" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/logo_1.png" alt="">
+        <img class="i1" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/logo_2.png" alt="">
+        <img class="i1" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/logo_3.png" alt="">
+        <img class="i1" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/logo_4.png" alt="">
+      </div>
+    </div>
+    
+    <div class="main7">
+        <div class="head7-1">What our awesome clients say</div>
+        <div class="head7-2">Great service with fast and relible support The design</div>
+        <div class="head7-3">work and detail put into themes are great.</div>
+       <div class="rate">
+        <img width="120px" height="30px" src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/stars.original.png" alt="">
+        <p class="side-head"> via Unbounce.com</p>
+        </div>
+    </div>
+
+    <div class="main8">
+        <div class="head8">Download App Now</div>
+        <pre class="head8-1">Lorem ipsum dolor sit amet consectetur enim ad 
+minim veniam quis nostrud.</pre>
+
+    <div class="btn1">
+    <div class="download-btn1">DOWNLOAD</div>
+    </div>
+
+    <div class="d-icons">
+        <a href="#"><span><img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/apple.png" class="log_st slow_fade" alt=""></span></a>
+        <a href="#"><span><img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/android.png" class="log_st slow_fade" alt=""></span></a>
+        <a href="#"><span><img src="https://pixfort.website/themeforest/landing/flatpack/3_app/images/3_app/windows.png" class="log_st slow_fade" alt=""></span></a>
+    </div>
+    </div>
+</div>
+
+    <div class="footer">
+        <div class="h9-1">All rights reserved Copyright © 2014 FLATPACK by PixFort</div>
+    <div class="footimg"></div>
+        <div class="h9-2">Your likes & share makes us happy!</div>
+        <img src="./Screenshot 2024-02-08 212205.png" alt="">
+    </div>
+    
+
+
+</body>
+</html>
